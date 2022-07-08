@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <!--     Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <!--     Stylesheets -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>  
+    <script src="scripture.js"></script>
+
+  </head>
+  <body ng-app="myApp">
+    
+    <div class="wrapper">
+      <nav>
+        <div class="top"></div>
+        <header>&#x2694; SWORD DRILL</header>
+      </nav>
+      <main ng-controller="ctrl">
+        <span id="displayText">
+          <h1 class="text-shine">
+            <span class="swords">{{sword}}</span> 
+            {{h1Text}}
+            <span class="swords">{{sword}}</span>
+          </h1>
+          <h2>{{h2Text}}</h2>
+        </span>
+        <button id="btn" ng-click="vanish(); scripture()">Swords Up!</button>
+      </main>
+      <footer>&copy; 2022 Kendra Jackman</footer>
+    </div>
+  </body>
+</html>
+<!-- 
+I'd like to be able to keep on clicking the button to get different verses.
+-->
